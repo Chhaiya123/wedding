@@ -5,7 +5,7 @@ export class Home
 {
     index(name) {
 
-        const homeUrl = localStorage.getItem("home");
+        const homeUrl = localStorage.getItem("home") ?? 'Your Name';
         
         //  const html = users.map(user => `
         //     <div>
