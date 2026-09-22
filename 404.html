@@ -9,11 +9,21 @@
 <script>
     const path = window.location.pathname;
 
-    sessionStorage.setItem("spa-path", path);
+    // GitHub Pages repository base path
+    const base = "/wedding";
 
-    window.location.replace(
-        "/ME/"
-    );
+    // Redirect unknown path back to index.html
+    if (path.startsWith(base + "/")) {
+        const guestName = decodeURIComponent(
+            path.substring((base + "/").length)
+        );
+
+        sessionStorage.setItem("guestName", guestName);
+
+        window.location.replace(base + "/");
+    } else {
+        window.location.replace(base + "/");
+    }
 </script>
 
 </body>
