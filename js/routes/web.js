@@ -13,7 +13,7 @@ export function webRoutes(router) {
         home.index();
     });
 
-    router.get("/about", () => {
+    router.get("/wedding/about", () => {
         about.index();
     });
 
@@ -21,7 +21,7 @@ export function webRoutes(router) {
     //     admin.index();
     // });
 
-    router.get("/:name", (params) => {
+    router.get("/wedding/:name", (params) => {
         const name = decodeURIComponent(params.name);
         const displayName = name.replaceAll("_", " ");
         localStorage.setItem("home", displayName);
