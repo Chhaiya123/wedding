@@ -8,12 +8,12 @@ export function webRoutes(router) {
     const about = new About();
     const admin = new Admin();
 
-    router.get("/wedding", () => {
+    router.get("/", () => {
         // const homeUrl = localStorage.getItem("home");
         home.index();
     });
 
-    router.get("/wedding/about", () => {
+    router.get("/about", () => {
         about.index();
     });
 
@@ -21,7 +21,7 @@ export function webRoutes(router) {
     //     admin.index();
     // });
 
-    router.get("/wedding/:name", (params) => {
+    router.get("/:name", (params) => {
         const name = decodeURIComponent(params.name);
         const displayName = name.replaceAll("_", " ");
         localStorage.setItem("home", displayName);

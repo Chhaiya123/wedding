@@ -17,7 +17,17 @@ export class Router {
     }
 
     load() {
-        const currentPath = window.location.pathname;
+        const base = "/wedding";
+
+        let currentPath = window.location.pathname;
+
+        if (currentPath.startsWith(base)) {
+            currentPath = currentPath.substring(base.length);
+        }
+
+        if (currentPath === "") {
+            currentPath = "/";
+        }
 
         for (const route of this.routes) {
 
@@ -49,7 +59,7 @@ export class Router {
         }
 
         document.querySelector("#app").innerHTML = `
-            <h1>404 - Page Not Found</h1>
+            <h1>404 - Page Not Found 1 </h1>
         `;
     }
 }
