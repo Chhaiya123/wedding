@@ -43,6 +43,44 @@ body {
     padding-bottom: 0.625rem !important;
 }
 
+
+.tasts{
+    width: 300px !important;
+    position: fixed !important;
+    bottom: 20px !important;
+    right: -100px !important;
+    padding: 16px 20px;
+    z-index: 1000 !important;
+    animation: showw 2s linear infinite;
+}
+@media screen and (max-width: 640px) {
+    .tasts{
+        width: 80% !important;
+        bottom: 5% !important;
+        left: 50% !important;
+        padding: 12px 20px;
+    }
+}
+@keyframes showw {
+    0%{opacity: 0; transform: translate(-50% ,40px) scale(0.6);}
+    5%{transform: translate(-50% ,0px) scale(1);}
+    10%{opacity: 1;}
+    90%{opacity: 1; transform: translate(-50% ,0px) scale(1);}
+    100%{opacity: 0;transform: translate(-50% ,40px) scale(0.5);}
+}
+
+#rsvpModal .Modal-body{
+    animation: show-modal 2s linear normal;
+}
+@keyframes show-modal {
+    0%{opacity: 0; transform: scale(0.6) }
+    5%{transform: scale(1) }
+    10%{opacity: 1;}
+    100%{opacity: 1; transform: scale(1) }
+}
+
+
+
 .bg-pattern {
     background-color: #610d18;
     background-image: radial-gradient(#871324 15%, transparent 16%), radial-gradient(#871324 15%, transparent 16%);
