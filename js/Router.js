@@ -17,17 +17,7 @@ export class Router {
     }
 
     load() {
-        const base = "/wedding";
-
-        let currentPath = window.location.pathname;
-
-        if (currentPath.startsWith(base)) {
-            currentPath = currentPath.substring(base.length);
-        }
-
-        if (currentPath === "") {
-            currentPath = "/";
-        }
+        const currentPath = window.location.pathname;
 
         for (const route of this.routes) {
 
@@ -50,7 +40,7 @@ export class Router {
                 const params = {};
 
                 names.forEach((name, index) => {
-                    params[name] = match[index + 1];
+                    params[name] = decodeURIComponent(match[index + 1]);
                 });
 
                 route.callback(params);
@@ -59,8 +49,8 @@ export class Router {
         }
 
         document.querySelector("#app").innerHTML = `
-            <h1>404 - Page Not Found 1 </h1>
-        `;
+        <h1>404 - Page Not Found1 </h1>
+    `;
     }
 }
 
@@ -68,20 +58,20 @@ export class Router {
 
 
 // navigate(path) {
-    //     history.pushState({}, "", `#${path}`);
-    //     this.load();
-    // }
+//     history.pushState({}, "", `#${path}`);
+//     this.load();
+// }
 
-    // load() {
-    //     const path = window.location.hash.slice(1) || "/";
+// load() {
+//     const path = window.location.hash.slice(1) || "/";
 
-    //     const callback = this.routes[path];
+//     const callback = this.routes[path];
 
-    //     if (callback) {
-    //         callback();
-    //     } else {
-    //         document.querySelector("#app").innerHTML = `
-    //             <h1>404 - Page Not Found</h1>
-    //         `;
-    //     }
-    // }
+//     if (callback) {
+//         callback();
+//     } else {
+//         document.querySelector("#app").innerHTML = `
+//             <h1>404 - Page Not Found</h1>
+//         `;
+//     }
+// }

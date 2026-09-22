@@ -20,6 +20,17 @@
     <div id="app"></div>
 
     <script type="module" src="./js/app.js"></script>
+    <script>
+        const redirectPath = sessionStorage.getItem("redirectPath");
+
+        if (redirectPath) {
+            sessionStorage.removeItem("redirectPath");
+
+            history.replaceState(null, "", redirectPath);
+        }
+
+        router.load();
+    </script>
     <!-- <script> -->
         // const homeUrl = localStorage.getItem("home");
         // document.getElementById("home").href = homeUrl;

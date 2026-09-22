@@ -6,25 +6,7 @@
 </head>
 <body>
 
-<script>
-    const path = window.location.pathname;
 
-    // GitHub Pages repository base path
-    const base = "/wedding";
-
-    // Redirect unknown path back to index.html
-    if (path.startsWith(base + "/")) {
-        const guestName = decodeURIComponent(
-            path.substring((base + "/").length)
-        );
-
-        sessionStorage.setItem("guestName", guestName);
-
-        window.location.replace(base + "/");
-    } else {
-        window.location.replace(base + "/");
-    }
-</script>
 
 </body>
 </html>
