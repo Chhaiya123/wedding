@@ -8,7 +8,7 @@ export function webRoutes(router) {
     const about = new About();
     const admin = new Admin();
 
-    router.get("/", () => {
+    router.get("/wedding", () => {
         // const homeUrl = localStorage.getItem("home");
         home.index();
     });
