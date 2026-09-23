@@ -94,7 +94,7 @@ export class Home
             </div>
 
             <!-- RSVP Modal Popup -->
-            <div id="rsvpModal" class="fixed top-0 inset-0 bg-black/50 flex items-center justify-center p-4 z-50 hidden">
+            <div id="rsvpModal" class="fixed top-0 inset-0 flex items-center justify-center p-4 z-50 hidden">
                 <div class="Modal-body bg-red-950 border-2 border-amber-400 p-6 rounded-2xl max-w-md w-full text-amber-100 shadow-2xl relative">
                     <button id="closeRSVP" class="absolute top-3 right-3 text-amber-300 hover:text-white text-xl font-bold">&times;</button>
                     <h3 class="moul-font my-text-lg text-amber-300 text-center mb-4">ទំនាក់ទំនង</h3>

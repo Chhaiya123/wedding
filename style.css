@@ -61,6 +61,7 @@ body {
         padding: 12px 20px;
     }
 }
+
 @keyframes showw {
     0%{opacity: 0; transform: translate(-50% ,40px) scale(0.6);}
     5%{transform: translate(-50% ,0px) scale(1);}
@@ -69,9 +70,50 @@ body {
     100%{opacity: 0;transform: translate(-50% ,40px) scale(0.5);}
 }
 
+.navbar-btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    transition: transform 0.3s ease;
+}
+.navbar-btn.fixed {
+    position: fixed;
+    top: 10px;
+    left: 0;
+    z-index: 800;
+    padding: 0 20px;
+    margin-top: 0px !important;
+}
+.navbar-btn.hide {
+    transform: translateY(calc(-100% - 10px));
+}
+.navbar-btn .nav-btn {
+    text-align: center !important;
+    padding: 8px 40px;
+    border-radius: 20px;
+}
+@media screen and (max-width: 640px) {
+    .navbar-btn {
+        top: 10px;
+        margin-top: 12px !important;
+    }
+    .navbar-btn .nav-btn {
+        font-size: clamp(14px, 1.2vw, 25px) !important;
+    }
+}
 #rsvpModal {
     top: 0px !important;
     left: 0px !important;
+    /* background-color: #4362ee44; */
+    background-image: linear-gradient(
+    to top,
+    #c8c6c600 0px,
+    #00000025 20px,
+    #00000025 calc(100% - 20px),
+    #c8c6c600 100%
+) !important;
 }
 #rsvpModal .Modal-body{
     animation: show-modal 2s linear normal;
