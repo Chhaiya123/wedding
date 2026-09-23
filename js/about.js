@@ -172,7 +172,7 @@ export class About
             </div>
 
             <!-- RSVP Modal Popup -->
-            <div id="tasts" class="tasts hidden text-sm bg-emerald-800 p-3 rounded-lg border border-amber-500/40"></div>
+            <div id="tasts" class="tasts hidden text-sm bg-teal-500/60 p-3 rounded-lg border border-amber-500/40"></div>
         `;
         const modal = new Modal();
         document

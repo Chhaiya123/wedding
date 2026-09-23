@@ -52,11 +52,12 @@ export class Home
                 
                 <div id="particles"></div>
                 <!-- Guest Name -->
-                <div class="text-center bg-amber-950/20 p-3 rounded-xl border border-amber-400/20 space-y-3 mb-6 shadow-inner">
-                    <h2 class="moul-font text-md sm:text-lg text-amber-200">${name == null ? homeUrl : name}</h2>
+                <h2 class="moul-font text-center mb-4 text-md sm:text-lg text-amber-200">សូមគោរពអញ្ចើញ</h2>
+                <div class="text-center bg-amber-800 p-3 rounded-xl border border-amber-400/20 space-y-3 mb-6 shadow-inner">
+                    <h2 class="moul-font text-md sm:text-lg text-olive-50">${name == null ? homeUrl : name}</h2>
                 </div>
 
-                                <div class="text-center bg-amber-950/20 p-5 rounded-xl border border-amber-400/20 space-y-3 mb-6 shadow-inner">
+                <div class="text-center bg-amber-950/20 p-5 rounded-xl border border-amber-400/20 space-y-3 mb-6 shadow-inner">
                     <p class="text-amber-300 text-base moul-font">សូមអញ្ជើញភ្ញៀវកិត្តិយស</p>
                     <p class="battambang-font text-xs sm:text-sm sm:px-5 text-amber-100 leading-relaxed">
                         មកទទួលទានភោជនាហារដែលប្រព្រឹតទៅនៅ ថ្ងៃ អាទិត្យ ទី១៧ ខែមករា ឆ្នាំ២០២៧ ត្រូវនឹងថ្ងៃ ១០ កើត ខែបុស្ស ឆ្នាំមមី អដ្ឋស័ក ព.ស ២៥៧០ វេលាម៉ោង ៥:០០ នាទីល្ងាច នៅគេហដ្ឋានខាងស្រី ស្ថិតនៅ​ ភូមិ តាសេក ឃុំ ព្រែកអំបិល ស្រុក ស្អាង ខេត្ត កណ្ដាល
@@ -112,7 +113,7 @@ export class Home
             </div>
 
             <!-- RSVP Modal Popup -->
-            <div id="tasts" class="tasts hidden text-sm bg-emerald-800 p-3 rounded-lg border border-amber-500/40"></div>
+            <div id="tasts" class="tasts hidden text-sm bg-teal-500/60 p-3 rounded-lg border border-amber-500/40"></div>
         `;
 
         const modal = new Modal();
