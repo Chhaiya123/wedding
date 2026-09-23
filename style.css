@@ -91,7 +91,7 @@ body {
 }
 .navbar-btn .nav-btn {
     text-align: center !important;
-    padding: 8px 40px;
+    padding: 8px 8px;
     border-radius: 20px;
 }
 @media screen and (max-width: 640px) {
