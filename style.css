@@ -134,7 +134,9 @@ body {
     font-size: calc(12px + 0.1vw) !important;
     line-height: 28px !important;
 }
-
+.nl-badge {
+    opacity: 0 !important;
+}
 
 
 .geometric-background {
