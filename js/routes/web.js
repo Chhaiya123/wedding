@@ -23,7 +23,9 @@ export function webRoutes(router) {
 
     router.get("/:name", (params) => {
         const name = decodeURIComponent(params.name);
-        const displayName = name.replaceAll("_", " ");
+        const displayName = name
+            .replace("_និង_", "<br>និង<br>")
+            .replaceAll("_", " ");
         localStorage.setItem("home", displayName);
         home.find(displayName);
     });
