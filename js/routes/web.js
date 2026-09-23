@@ -28,7 +28,4 @@ export function webRoutes(router) {
         home.find(displayName);
     });
     
-
-
-
 }

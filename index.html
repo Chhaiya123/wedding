@@ -20,23 +20,12 @@
     <div id="app"></div>
 
     <script type="module" src="./js/app.js"></script>
+
     <script>
-        const redirectPath = sessionStorage.getItem("redirectPath");
-
-        if (redirectPath) {
-            sessionStorage.removeItem("redirectPath");
-
-            history.replaceState(null, "", redirectPath);
-        }
-
-        router.load();
+        const homeUrl = localStorage.getItem("home");
+        document.getElementById("home").href = homeUrl;
+        document.getElementById("about").href = url;
     </script>
-    <!-- <script> -->
-        // const homeUrl = localStorage.getItem("home");
-        // document.getElementById("home").href = homeUrl;
-        // document.getElementById("about").href = url;
-    <!-- </script> -->
-    <!-- <script type="module" src="./script.js"></script> -->
 
 </body>
 </html>
