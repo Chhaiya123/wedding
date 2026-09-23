@@ -69,6 +69,10 @@ body {
     100%{opacity: 0;transform: translate(-50% ,40px) scale(0.5);}
 }
 
+#rsvpModal {
+    top: 0px !important;
+    left: 0px !important;
+}
 #rsvpModal .Modal-body{
     animation: show-modal 2s linear normal;
 }

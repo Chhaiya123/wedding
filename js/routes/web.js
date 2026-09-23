@@ -9,7 +9,7 @@ export function webRoutes(router) {
     const admin = new Admin();
 
     router.get("/", () => {
-        const homeUrl = localStorage.getItem("home");
+        const homeUrl = localStorage.getItem("home") ?? "ឈ្មោះ_ភ្ញៀវកិត្តិយស";
         home.index(homeUrl);
     });
 
