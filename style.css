@@ -91,7 +91,7 @@ body {
 }
 .navbar-btn .nav-btn {
     text-align: center !important;
-    padding: 8px 8px;
+    padding: 8px 30px;
     border-radius: 20px;
 }
 @media screen and (max-width: 640px) {
@@ -100,6 +100,7 @@ body {
         margin-top: 12px !important;
     }
     .navbar-btn .nav-btn {
+        padding: 8px 8px;
         font-size: clamp(14px, 1.2vw, 25px) !important;
     }
 }
