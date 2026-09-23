@@ -26,7 +26,7 @@ export class Modal {
         tast.innerText = "🔗 តំណភ្ជាប់ត្រូវបានចម្លង!";
         setTimeout(() => {
             tast.classList.add('hidden')
-        },2000)
+        },3000)
         tast.classList.remove('hidden')
         
     }

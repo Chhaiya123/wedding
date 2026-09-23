@@ -51,7 +51,8 @@ body {
     right: -100px !important;
     padding: 16px 20px;
     z-index: 1000 !important;
-    animation: showw 2s linear infinite;
+    animation: showw 3.2s linear infinite;
+    background-color: oklch(63.882% 0.13723 163.452) !important;
 }
 @media screen and (max-width: 640px) {
     .tasts{
