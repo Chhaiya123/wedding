@@ -4,11 +4,62 @@ body {
     font-family: 'Hanuman', sans-serif;
     background-color: #580c14;
 }
+@media screen and (max-width: 640px) {
+    body {
+        overflow-X: hidden !important;
+    }
+}
 
 .moul-font {
     font-family: 'Moul', cursive;
 }
-
+.frame{
+    padding: 50px 30px !important;
+    /* max-width: 100%; */
+    /* padding: 120px; */
+    /* background-color: #0080801d; */
+    /* background-image: url(./photo/images-left.png), url(./photo/images.png); */
+    /* background-size: 200px, 200px; */
+    /* background-position: top left, top right; */
+    /* background-repeat: no-repeat, no-repeat; */
+}
+.frame [class^="conner-"] {
+    width: 200px;
+    position: absolute;
+    z-index: 0;
+}
+@media screen and (max-width: 640px) {
+    body {
+        overflow-X: hidden !important;
+        padding: 2px !important;
+    }
+    .frame {
+        padding: 50px 20px !important;
+    }
+    .frame [class^="conner-"] {
+        width: 160px;
+        position: absolute;
+    }
+}
+.frame .conner-left{
+    top: -13px;
+    left: -11px;
+}
+.frame .conner-right{
+    top: -11px;
+    right: -13px;
+    transform: rotate(90deg);
+}
+.frame .conner-bottom-right{
+    bottom: -13px;
+    right: -11px;
+    transform: rotate(-180deg);
+}
+.frame .conner-bottom-left{
+    bottom: -11px;
+    left: -13px;
+    transform: rotate(-90deg);
+}
 .battambang-font {
     font-family: 'Hanuman', cursive;
 }
@@ -29,8 +80,8 @@ body {
 }
 
 .gold-border {
-    border: 3px solid #d4af37;
-    box-shadow: 0 0 25px rgba(212, 175, 55, 0.5);
+    /* border: 3px solid #bd93092e; */
+    /* box-shadow: 0 0 25px rgba(212, 175, 55, 0.5); */
 }
 
 .text-xs {
@@ -69,6 +120,22 @@ body {
     10%{opacity: 1;}
     90%{opacity: 1; transform: translate(-50% ,0px) scale(1);}
     100%{opacity: 0;transform: translate(-50% ,40px) scale(0.5);}
+}
+
+.animate-bounce {
+    animation: bounces 1.5s infinite !important;
+}
+
+@keyframes bounces {
+    0%, 100% {
+        transform: translateY(-15%) scaleY(1.15);
+        animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    }
+
+    50% {
+        transform: translateY(0) scaleY(1);
+        animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    }
 }
 
 .navbar-btn {

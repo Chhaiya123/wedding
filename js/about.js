@@ -4,36 +4,42 @@ export class About
 {
     index() {
         document.querySelector("#app").innerHTML = `
-            <div class="max-w-xl w-full bg-gradient-to-b from-red-950 via-red-900 to-red-950 text-amber-100 p-4 sm:p-10 rounded-2xl gold-border relative overflow-hidden shadow-2xl my-4">
+            <div class="frame max-w-xl w-full bg-gradient-to-b from-red-950 via-red-900 to-red-950 text-amber-100 p-4 sm:p-10 gold-border relative overflow shadow-2xl my-4">
         
                 <!-- Traditional Corner Ornaments -->
+                <img class="conner-left" src="./photo/images-left.png" alt="no image">
+                <img class="conner-right" src="./photo/images-left.png" alt="no image">
+                <img class="conner-bottom-right" src="./photo/images-left.png" alt="no image">
+                <img class="conner-bottom-left" src="./photo/images-left.png" alt="no image">
+                <!--
                 <div class="absolute top-2 left-2 sm:top-3 sm:left-3 w-12 h-12 border-t-2 border-l-2 border-amber-300"></div>
                 <div class="absolute top-2 right-2 sm:top-3 sm:right-3 w-12 h-12 border-t-2 border-r-2 border-amber-300"></div>
                 <div class="absolute bottom-2 left-2 sm:bottom-3 sm:left-3 w-12 h-12 border-b-2 border-l-2 border-amber-300"></div>
                 <div class="absolute bottom-2 right-2 sm:bottom-3 sm:right-3 w-12 h-12 border-b-2 border-r-2 border-amber-300"></div>
-
+                -->
+                
                 <!-- Header / Invitation Title -->
-                <div class="text-center space-y-2 mb-6">
+                <div class="text-center space-y-2 mb-6" data-aos="fade-down">
                     <p class="text-amber-300 text-xs sm:text-sm tracking-widest uppercase battambang-font">ព្រះរាជាណាចក្រកម្ពុជា</p>
                     <p class="text-amber-200 text-xs italic">ជាទីគោរពស្រលាញ់ដ៏ជ្រាលជ្រៅ</p>
-                    <h1 class="moul-font text-2xl sm:text-3xl gold-gradient mt-2 py-2">សិរីមង្គលអាពាហ៍ពិពាហ៍</h1>
+                    <h1 class="moul-font text-2xl sm:text-3xl gold-gradient mt-2 py-2" data-aos="fade-down" data-aos-duration="1200">សិរីមង្គលអាពាហ៍ពិពាហ៍</h1>
                     <div class="w-32 h-0.5 bg-amber-400 mx-auto my-3"></div>
                     <div class="flex items-center justify-between header sm:px-5">
-                        <div class="text-start moul-font text-amber-200/80">
+                        <div class="text-start moul-font text-amber-200/80" data-aos="fade-right" data-aos-duration="1500">
                             <h6>លោក សុង យឿន</h6>
                             <h6>លោកស្រី ថោង គន្ធា</h6>
                         </div>
-                        <div class="text-start moul-font text-amber-200/80">
+                        <div class="text-start moul-font text-amber-200/80" data-aos="fade-left" data-aos-duration="1500">
                             <h6>លោក ហែម តៅ</h6>
                             <h6>លោកស្រី សាន សោភា</h6>
                         </div>
                     </div>
-                    <p class="battambang-font text-xs sm:text-sm sm:px-5 text-amber-100 leading-relaxed pt-2">
+                    <p class="battambang-font text-xs sm:text-sm sm:px-5 text-amber-100 leading-relaxed pt-2" data-aos="fade-down">
                         យើងខ្ញុំមានកិត្តិយសសូមគោរពអញ្ជើញ ឯកឧត្តម លោកជំទាវ លោក លោកស្រី អ្នកនាងកញ្ញា និង ប្រិយមិត្តទាំងអស់អញ្ចើញចូលរួមជាអធិបតី និងជាភ្ញៀវកិត្តិយលដើម្បីប្រសិទ្ធិពរជ័យ សិរីសួស្ដី ជ័យមង្គ័លក្នុង ពិធីរៀបអាពារណ៍ពិពាហ៍ កូនប្រុស-កូនស្រី របស់យើងខ្ញុំ ។
                     </p>
                 </div>
 
-                <div class="flex flex-col sm:flex-row items-center justify-around gap-6 my-8 bg-black/20 p-6 rounded-xl border border-amber-500/30 relative">
+                <div class="flex flex-col sm:flex-row items-center justify-around gap-6 my-8 bg-black/20 p-6 rounded-xl border border-amber-500/30 relative" data-aos="zoom-out" data-aos-duration="1500">
                     <div class="geometric-background" id="geometric-background"></div>
                     <!-- Groom -->
                     <div class="text-center space-y-2">
@@ -48,7 +54,7 @@ export class About
 
                     <!-- Heart Symbol -->
                     <div class="text-amber-400 text-3xl font-bold animate-bounce">
-                        ❤️
+                        <img width="100px" src="./photo/balloon.png" alt="no image" data-aos="fade-down">
                     </div>
 
                     <!-- Bride -->
@@ -64,7 +70,7 @@ export class About
 
                 </div>
 
-                <div class="text-center bg-amber-950/20 p-5 rounded-xl border border-amber-400/20 space-y-3 mb-6 shadow-inner">
+                <div class="text-center bg-amber-950/20 p-5 rounded-xl border border-amber-400/20 space-y-3 mb-6 shadow-inner" data-aos="fade-up">
                     <p class="text-amber-300 text-base moul-font">សូមអញ្ជើញភ្ញៀវកិត្តិយស</p>
                     <p class="battambang-font text-xs sm:text-sm sm:px-5 text-amber-100 leading-relaxed">
                         មកទទួលទានភោជនាហារដែលប្រព្រឹតទៅនៅ ថ្ងៃ អាទិត្យ ទី១៧ ខែមករា ឆ្នាំ២០២៧ ត្រូវនឹងថ្ងៃ ១០ កើត ខែបុស្ស ឆ្នាំមមី អដ្ឋស័ក ព.ស ២៥៧០ វេលាម៉ោង ៥:០០ នាទីល្ងាច នៅគេហដ្ឋានខាងស្រី ស្ថិតនៅ​ ភូមិ តាសេក ឃុំ ព្រែកអំបិល ស្រុក ស្អាង ខេត្ត កណ្ដាល
@@ -73,22 +79,22 @@ export class About
                 </div>
 
                 <!-- Couple Photo Gallery Section -->
-                <div class="mb-6 bg-black/20 p-4 rounded-xl border border-amber-500/20 text-center space-y-3">
+                <div class="mb-6 bg-black/20 p-4 rounded-xl border border-amber-500/20 text-center space-y-3" data-aos="fade-up">
                     <p class="moul-font text-sm text-amber-300">រូបភាពអនុស្សាវរីយ៍</p>
                     <div class="grid grid-cols-3 gap-2">
-                        <div class="rounded-lg overflow-hidden border border-amber-400/40 aspect-square group cursor-pointer">
+                        <div class="rounded-lg overflow-hidden border border-amber-400/40 aspect-square group cursor-pointer" data-aos="fade-up">
                             <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=300&q=80" alt="Wedding 1" class="w-full h-full object-cover group-hover:scale-110 transition duration-300">
                         </div>
-                        <div class="rounded-lg overflow-hidden border border-amber-400/40 aspect-square group cursor-pointer">
+                        <div class="rounded-lg overflow-hidden border border-amber-400/40 aspect-square group cursor-pointer" data-aos="fade-up">
                             <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=300&q=80" alt="Wedding 2" class="w-full h-full object-cover group-hover:scale-110 transition duration-300">
                         </div>
-                        <div class="rounded-lg overflow-hidden border border-amber-400/40 aspect-square group cursor-pointer">
+                        <div class="rounded-lg overflow-hidden border border-amber-400/40 aspect-square group cursor-pointer" data-aos="fade-up">
                             <img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=300&q=80" alt="Wedding 3" class="w-full h-full object-cover group-hover:scale-110 transition duration-300">
                         </div>
                     </div>
                 </div>
 
-                <div class="text-center bg-amber-950/70 p-5 rounded-xl border border-amber-400/40 space-y-3 mb-6 shadow-inner">
+                <div class="text-center bg-amber-950/70 p-5 rounded-xl border border-amber-400/40 space-y-3 mb-6 shadow-inner" data-aos="fade-up">
                     <p class="text-xs text-amber-300 uppercase tracking-widest battambang-font">ថ្ងៃប្រារព្ធពិធីមង្គលការ</p>
                     <p class="moul-font text-lg sm:text-xl text-amber-300">ថ្ងៃសៅរ៍ និង ថ្ងៃអាទិត្យ</p>
                     <p class="battambang-font text-base sm:text-lg text-amber-100 font-bold">
@@ -119,12 +125,12 @@ export class About
                 </div>
 
                 <div class="text-center space-y-3 text-xs sm:text-sm text-amber-200 battambang-font mb-6">
-                    <p class="font-semibold text-amber-300 text-base">ទីតាំងកម្មពិធី៖</p>
-                    <p class="bg-black/20 p-3 rounded-lg border border-amber-500/20">
+                    <p class="font-semibold text-amber-300 text-base" data-aos="fade-up">ទីតាំងកម្មពិធី៖</p>
+                    <p class="bg-black/20 p-3 rounded-lg border border-amber-500/20" data-aos="fade-up">
                         🏡 គេហដ្ឋានផ្ទះខាងស្រី (ភូមិ តាសេក ឃុំ ព្រែកអំបិល ស្រុក ស្អាង ខេត្ត កណ្ដាល)
                     </p>
                     
-                    <div class="flex flex-wrap justify-center gap-3 pt-3">
+                    <div class="flex flex-wrap justify-center gap-3 pt-3" data-aos="fade-up">
                         <button id="openRSVP" class="bg-gradient-to-r from-amber-600 to-yellow-600 hover:from-amber-500 hover:to-yellow-500 text-red-950 font-bold px-5 py-2.5 rounded-full shadow-lg transition transform hover:scale-102 battambang-font text-xs sm:text-sm w-full sm:w-auto">
                             ✨ ទំនាក់ទំនង-Contact
                         </button>
@@ -132,13 +138,13 @@ export class About
                             🔗 ចែករំលែកកាតអញ្ជើញ
                         </button>
                     </div>
-                    <a href="https://maps.app.goo.gl/SVizjvToVoLENRj47" target="_blank" class="inline-block bg-gradient-to-r to-yellow-600 hover:bg-red-800 text-amber-200 border border-amber-400/50 font-semibold px-4 py-2.5 rounded-full shadow transition transform hover:scale-102 battambang-font text-xs sm:text-sm w-full sm:w-auto">
+                    <a href="https://maps.app.goo.gl/SVizjvToVoLENRj47" target="_blank" class="inline-block bg-gradient-to-r to-yellow-600 hover:bg-red-800 text-amber-200 border border-amber-400/50 font-semibold px-4 py-2.5 rounded-full shadow transition transform hover:scale-102 battambang-font text-xs sm:text-sm w-full sm:w-auto" data-aos="fade-up">
                         💒 ទីតាំងពិធីមង្គលការ
                     </a>
                 </div>
 
                 <!-- Footer Blessings -->
-                <div class="text-center border-t border-amber-500/30 pt-4 space-y-1 text-xs text-amber-300 italic battambang-font">
+                <div class="text-center border-t border-amber-500/30 pt-4 space-y-1 text-xs text-amber-300 italic battambang-font" data-aos="fade-up">
                     <p class="font-medium">វត្តមានដ៏ខ្ពង់ខ្ពស់របស់ ឯកឧត្តម លោកជំទាវ លោក លោកស្រី គឺជាកិត្តិយសដ៏ក្រៃលែងសម្រាប់យើងខ្ញុំ។</p>
                     <p class="text-[10px] text-amber-400/70 pt-2">រៀបចំដោយ: ក្រុមការងារអញ្ជើញមង្គលការឌីជីថល</p>
                 </div>
@@ -243,7 +249,9 @@ class Wedding {
             shape.style.animationDuration = `${duration}s`;
 
             // Add to background
-            background.appendChild(shape);
+            if (background) {
+                background.appendChild(shape);
+            }
         }
     }
 
@@ -428,21 +436,24 @@ class Wedding {
         // Display
         // =========================
 
-        document.getElementById("days")
-            .innerText =
-            String(days).padStart(2, "0");
-
-        document.getElementById("hours")
-            .innerText =
-            String(hours).padStart(2, "0");
-
-        document.getElementById("minutes")
-            .innerText =
-            String(minutes).padStart(2, "0");
-
-        document.getElementById("seconds")
-            .innerText =
-            String(seconds).padStart(2, "0");
+        const day = document.getElementById("days");
+        if(day) {
+            document.getElementById("days")
+                .innerText =
+                String(days).padStart(2, "0");
+    
+            document.getElementById("hours")
+                .innerText =
+                String(hours).padStart(2, "0");
+    
+            document.getElementById("minutes")
+                .innerText =
+                String(minutes).padStart(2, "0");
+    
+            document.getElementById("seconds")
+                .innerText =
+                String(seconds).padStart(2, "0");
+        }
     }
 
 
