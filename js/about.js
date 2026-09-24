@@ -17,7 +17,7 @@ export class About
                 <div class="absolute bottom-2 left-2 sm:bottom-3 sm:left-3 w-12 h-12 border-b-2 border-l-2 border-amber-300"></div>
                 <div class="absolute bottom-2 right-2 sm:bottom-3 sm:right-3 w-12 h-12 border-b-2 border-r-2 border-amber-300"></div>
                 -->
-                
+
                 <!-- Header / Invitation Title -->
                 <div class="text-center space-y-2 mb-6" data-aos="fade-down">
                     <p class="text-amber-300 text-xs sm:text-sm tracking-widest uppercase battambang-font">ព្រះរាជាណាចក្រកម្ពុជា</p>
@@ -39,7 +39,7 @@ export class About
                     </p>
                 </div>
 
-                <div class="flex flex-col sm:flex-row items-center justify-around gap-6 my-8 bg-black/20 p-6 rounded-xl border border-amber-500/30 relative" data-aos="zoom-out" data-aos-duration="1500">
+                <div class="flex flex-col sm:flex-row items-center justify-around gap-6 my-8 bg-black/20 p-6 rounded-xl border border-amber-500/30 overflow-hidden relative" data-aos="zoom-out" data-aos-duration="1500">
                     <div class="geometric-background" id="geometric-background"></div>
                     <!-- Groom -->
                     <div class="text-center space-y-2">
