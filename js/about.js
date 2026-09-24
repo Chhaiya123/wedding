@@ -1,9 +1,16 @@
 import { Modal } from './modal/Modal.js';
+import { Navbar } from './modal/Navbar.js';
 
 export class About
 {
     index() {
-        document.querySelector("#app").innerHTML = `
+        const app = document.querySelector("#app");
+     
+        const navbars = new Navbar();
+
+        // Add Navbar
+        app.appendChild(navbars.render());
+        app.insertAdjacentHTML("beforeend", `
             <div class="frame max-w-xl w-full bg-gradient-to-b from-red-950 via-red-900 to-red-950 text-amber-100 p-4 sm:p-10 gold-border relative overflow shadow-2xl my-4">
         
                 <!-- Traditional Corner Ornaments -->
@@ -179,7 +186,7 @@ export class About
 
             <!-- RSVP Modal Popup -->
             <div id="tasts" class="tasts hidden text-sm bg-teal-500/60 p-3 rounded-lg border border-amber-500/40"></div>
-        `;
+        `);
         const modal = new Modal();
         document
             .getElementById("openRSVP")
@@ -197,6 +204,46 @@ export class About
             .addEventListener("click", () => {
                 modal.shareCard();
             });
+
+        
+        const homeUrl = localStorage.getItem("home");
+        const home = document.getElementById("home");
+        const navbar = document.getElementById("navbar");
+
+        if (home && homeUrl) {
+            home.href = homeUrl;
+        }
+
+        if (navbar) {
+            let lastScrollY = window.scrollY;
+
+            window.addEventListener("scroll", () => {
+
+                const currentScrollY = window.scrollY;
+
+                // នៅខាងលើ
+                if (currentScrollY < 50) {
+                    navbar.classList.remove("fixed", "hide");
+                }
+
+                // ចុះក្រោម
+                if (currentScrollY > 50) {
+
+                    if (currentScrollY > lastScrollY) {
+                        // Scroll Down
+                        navbar.classList.add("fixed");
+                        navbar.classList.remove("hide");
+                    }
+
+                    if (currentScrollY < lastScrollY) {
+                        // Scroll Up
+                        navbar.classList.add("hide");
+                    }
+                }
+
+                lastScrollY = currentScrollY;
+            });
+        }
     }
 
 }
