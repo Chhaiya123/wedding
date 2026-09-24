@@ -6,7 +6,11 @@ body {
 }
 @media screen and (max-width: 640px) {
     body {
-        overflow-X: hidden !important;
+        padding: 0px 4px;
+        overflow-x: hidden !important;
+    }
+    .my-contect{
+        overflow: hidden !important;
     }
 }
 
@@ -30,8 +34,7 @@ body {
 }
 @media screen and (max-width: 640px) {
     body {
-        overflow-X: hidden !important;
-        padding: 2px !important;
+        padding: 0px !important;
     }
     .frame {
         padding: 50px 20px !important;
@@ -60,6 +63,28 @@ body {
     left: -13px;
     transform: rotate(-90deg);
 }
+
+@media screen and (max-width: 640px) {
+    .frame .conner-left{
+        top: -2px;
+        left: -1px;
+    }
+    .frame .conner-right{
+        top: -2px;
+        right: -1px;
+    }
+    .frame .conner-bottom-right{
+        bottom: -2px;
+        right: -1px;
+    }
+    .frame .conner-bottom-left{
+        bottom: -2px;
+        left: -1px;
+    }
+
+}
+
+
 .battambang-font {
     font-family: 'Hanuman', cursive;
 }
@@ -139,12 +164,19 @@ body {
 }
 
 .navbar-btn {
+    padding: 0 4px;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 14px;
     transition: transform 0.3s ease;
+    transform: translateY(0%);
+    animation: navbar 0.6s linear;
+}
+@keyframes navbar {
+    0%{transform: translateY(-100%); opacity: 0;}
+    100%{transform: translateY(0%); opacity: 1;}
 }
 .navbar-btn.fixed {
     position: fixed;

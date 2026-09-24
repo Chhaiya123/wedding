@@ -936,6 +936,9 @@
     .sm\:flex-row {
       flex-direction: row;
     }
+    .sm\:overflow-hidden {
+      overflow: hidden;
+    }
     .sm\:p-6 {
       padding: calc(var(--spacing) * 6);
     }
