@@ -138,13 +138,13 @@ export class About
                             🔗 ចែករំលែកកាតអញ្ជើញ
                         </button>
                     </div>
-                    <a href="https://maps.app.goo.gl/SVizjvToVoLENRj47" target="_blank" class="inline-block bg-gradient-to-r to-yellow-600 hover:bg-red-800 text-amber-200 border border-amber-400/50 font-semibold px-4 py-2.5 rounded-full shadow transition transform hover:scale-102 battambang-font text-xs sm:text-sm w-full sm:w-auto" data-aos="fade-up">
+                    <a href="https://maps.app.goo.gl/SVizjvToVoLENRj47" target="_blank" class="inline-block bg-gradient-to-r to-yellow-600 hover:bg-red-800 text-amber-200 border border-amber-400/50 font-semibold px-4 py-2.5 rounded-full shadow transition transform hover:scale-102 battambang-font text-xs sm:text-sm w-full sm:w-auto" data-aos="zoom-in">
                         💒 ទីតាំងពិធីមង្គលការ
                     </a>
                 </div>
 
                 <!-- Footer Blessings -->
-                <div class="text-center border-t border-amber-500/30 pt-4 space-y-1 text-xs text-amber-300 italic battambang-font" data-aos="fade-up">
+                <div class="text-center border-t border-amber-500/30 pt-4 space-y-1 text-xs text-amber-300 italic battambang-font" data-aos="zoom-in">
                     <p class="font-medium">វត្តមានដ៏ខ្ពង់ខ្ពស់របស់ ឯកឧត្តម លោកជំទាវ លោក លោកស្រី គឺជាកិត្តិយសដ៏ក្រៃលែងសម្រាប់យើងខ្ញុំ។</p>
                     <p class="text-[10px] text-amber-400/70 pt-2">រៀបចំដោយ: ក្រុមការងារអញ្ជើញមង្គលការឌីជីថល</p>
                 </div>
