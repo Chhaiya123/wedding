@@ -2,6 +2,7 @@
 import { Router } from './Router.js';
 import { webRoutes } from './routes/web.js';
 
+
 const router = new Router();
 
 webRoutes(router);
@@ -36,3 +37,4 @@ document.addEventListener("click", (e) => {
 window.addEventListener("popstate", () => {
     router.load();
 });
+

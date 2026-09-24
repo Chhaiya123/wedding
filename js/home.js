@@ -22,7 +22,7 @@ export class Home
                 <div class="absolute bottom-2 right-2 sm:bottom-3 sm:right-3 w-12 h-12 border-b-2 border-r-2 border-amber-300"></div>
 
                 <!-- Header / Invitation Title -->
-                <div class="text-center space-y-2 mb-6">
+                <div class="text-center space-y-2 mb-6" data-aos="fade-up">
                     <p class="text-amber-300 text-xs sm:text-sm tracking-widest uppercase battambang-font">ព្រះរាជាណាចក្រកម្ពុជា</p>
                     <p class="text-amber-200 text-xs italic">ជាទីគោរពស្រលាញ់ដ៏ជ្រាលជ្រៅ</p>
                     <h1 class="moul-font text-2xl sm:text-3xl gold-gradient mt-2 py-2">សិរីមង្គលអាពាហ៍ពិពាហ៍</h1>
@@ -33,7 +33,7 @@ export class Home
                 <div class="flex flex-col sm:flex-row items-center justify-around gap-6 my-8 bg-black/20 p-6 rounded-xl border border-amber-500/30 relative">
                 
                     <!-- Groom -->
-                    <div class="text-center space-y-2">
+                    <div class="text-center space-y-2" data-aos="fade-up">
                         <p class="text-xs text-amber-300 battambang-font uppercase">កូនប្រុស</p>
                         <h2 class="moul-font text-base sm:text-lg text-amber-200">យឿន ឆៃយ៉ា</h2>
                     </div>
@@ -44,7 +44,7 @@ export class Home
                     </div>
 
                     <!-- Bride -->
-                    <div class="text-center space-y-2">
+                    <div class="text-center space-y-2" data-aos="fade-up">
                         <p class="text-xs text-amber-300 battambang-font uppercase">កូនស្រី</p>
                         <h2 class="moul-font text-base sm:text-lg text-amber-200">ហែម សុខហ័រ</h2>
                     </div>
@@ -52,12 +52,12 @@ export class Home
                 
                 <div id="particles"></div>
                 <!-- Guest Name -->
-                <h2 class="moul-font text-center mb-4 text-md sm:text-lg text-amber-200">សូមគោរពអញ្ចើញ</h2>
-                <div class="text-center bg-amber-800 p-3 rounded-xl border border-amber-400/20 space-y-3 mb-6 shadow-inner">
+                <h2 class="moul-font text-center mb-4 text-md sm:text-lg text-amber-200" data-aos="fade-up">សូមគោរពអញ្ចើញ</h2>
+                <div class="text-center bg-amber-800 p-3 rounded-xl border border-amber-400/20 space-y-3 mb-6 shadow-inner" data-aos="fade-up">
                     <h2 class="moul-font text-md sm:text-lg text-olive-50">${name == null ? homeUrl : name}</h2>
                 </div>
 
-                <div class="text-center bg-amber-950/20 p-5 rounded-xl border border-amber-400/20 space-y-3 mb-6 shadow-inner">
+                <div class="text-center bg-amber-950/20 p-5 rounded-xl border border-amber-400/20 space-y-3 mb-6 shadow-inner" data-aos="fade-up">
                     <p class="text-amber-300 text-base moul-font">សូមអញ្ជើញភ្ញៀវកិត្តិយស</p>
                     <p class="battambang-font text-xs sm:text-sm sm:px-5 text-amber-100 leading-relaxed">
                         មកទទួលទានភោជនាហារដែលប្រព្រឹតទៅនៅ ថ្ងៃ អាទិត្យ ទី១៧ ខែមករា ឆ្នាំ២០២៧ ត្រូវនឹងថ្ងៃ ១០ កើត ខែបុស្ស ឆ្នាំមមី អដ្ឋស័ក ព.ស ២៥៧០ វេលាម៉ោង ៥:០០ នាទីល្ងាច នៅគេហដ្ឋានខាងស្រី ស្ថិតនៅ​ ភូមិ តាសេក ឃុំ ព្រែកអំបិល ស្រុក ស្អាង ខេត្ត កណ្ដាល
@@ -65,13 +65,13 @@ export class Home
                     </p>
                 </div>
 
-                <div class="text-center space-y-3 text-xs sm:text-sm text-amber-200 battambang-font mb-6">
-                    <p class="font-semibold text-amber-300 text-base">ទីតាំងកម្មពិធី៖</p>
-                    <p class="bg-black/20 p-3 rounded-lg border border-amber-500/20">
+                <div class="text-center space-y-3 text-xs sm:text-sm text-amber-200 battambang-font mb-6" data-aos="fade-up">
+                    <p class="font-semibold text-amber-300 text-base" data-aos="fade-up">ទីតាំងកម្មពិធី៖</p>
+                    <p class="bg-black/20 p-3 rounded-lg border border-amber-500/20" data-aos="fade-up">
                         🏡 គេហដ្ឋានផ្ទះខាងស្រី (ភូមិ តាសេក ឃុំ ព្រែកអំបិល ស្រុក ស្អាង ខេត្ត កណ្ដាល)
                     </p>
                     
-                    <div class="flex flex-wrap justify-center gap-3 pt-3">
+                    <div class="flex flex-wrap justify-center gap-3 pt-3" data-aos="fade-up">
                         <button id="openRSVP" class="bg-gradient-to-r from-amber-600 to-yellow-600 hover:from-amber-500 hover:to-yellow-500 text-red-950 font-bold px-5 py-2.5 rounded-full shadow-lg transition transform hover:scale-102 battambang-font text-xs sm:text-sm w-full sm:w-auto">
                             ✨ ទំនាក់ទំនង-Contact
                         </button>
