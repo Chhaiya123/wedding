@@ -162,12 +162,12 @@ export class Home
                 const currentScrollY = window.scrollY;
 
                 // នៅខាងលើ
-                if (currentScrollY < 50) {
+                if (currentScrollY < 100) {
                     navbar.classList.remove("fixed", "hide");
                 }
 
                 // ចុះក្រោម
-                if (currentScrollY > 50) {
+                if (currentScrollY > 100) {
 
                     if (currentScrollY > lastScrollY) {
                         // Scroll Down
