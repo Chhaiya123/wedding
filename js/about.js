@@ -14,6 +14,7 @@ export class About
             <div class="frame max-w-xl w-full bg-gradient-to-b from-teal-950 via-teal-600 to-teal-700 text-amber-100 p-4 sm:p-10 gold-border relative overflow shadow-2xl my-4">
         
                 <!-- Traditional Corner Ornaments -->
+                <img class="conner-top" src="./photo/conner-top.png" alt="no image">
                 <img class="conner-left" src="./photo/images-left.png" alt="no image">
                 <img class="conner-right" src="./photo/images-left.png" alt="no image">
                 <img class="conner-bottom-right" src="./photo/images-left.png" alt="no image">
@@ -27,18 +28,19 @@ export class About
 
                 <!-- Header / Invitation Title -->
                 <div class="text-center space-y-2 mb-6" data-aos="fade-down">
-                    <p class="text-amber-300 text-xs sm:text-sm tracking-widest uppercase battambang-font">ព្រះរាជាណាចក្រកម្ពុជា</p>
-                    <p class="text-amber-200 text-xs italic">ជាទីគោរពស្រលាញ់ដ៏ជ្រាលជ្រៅ</p>
-                    <h1 class="moul-font text-2xl sm:text-3xl gold-gradient mt-2 py-2" data-aos="fade-down" data-aos-duration="1200">សិរីមង្គលអាពាហ៍ពិពាហ៍</h1>
-                    <div class="w-32 h-0.5 bg-amber-400 mx-auto my-3"></div>
+                    <p class="moul-font text-amber-300 text-xs tracking-widest uppercase text-shadow-lg/20">ព្រះរាជាណាចក្រកម្ពុជា</p>
+                    <p class="moul-font text-amber-200 text-xs italic text-shadow-lg/20">ជាទីគោរពស្រលាញ់ដ៏ជ្រាលជ្រៅ</p>
+                    <h1 class="moul-font text-2xl sm:text-3xl text-yellow-500 gold-gradient mt-2 py-2 text-shadow-lg text-pretty" data-aos="fade-down" data-aos-duration="1200">សិរីមង្គលអាពាហ៍ពិពាហ៍</h1>
+                    <!-- <div class="w-32 h-0.5 bg-amber-400 mx-auto my-3"></div> -->
+                    <img width="120px " class="mx-auto" src="./photo/border-style.png" alt="no image">
                     <div class="flex items-center justify-between header sm:px-5">
                         <div class="text-start moul-font text-amber-200/80" data-aos="fade-right" data-aos-duration="1500">
-                            <h6>លោក សុង យឿន</h6>
-                            <h6>លោកស្រី ថោង គន្ធា</h6>
+                            <h6 class="text-shadow-sm">លោក សុង យឿន</h6>
+                            <h6 class="text-shadow-sm">លោកស្រី ថោង គន្ធា</h6>
                         </div>
                         <div class="text-start moul-font text-amber-200/80" data-aos="fade-left" data-aos-duration="1500">
-                            <h6>លោក ហែម តៅ</h6>
-                            <h6>លោកស្រី សាន សោភា</h6>
+                            <h6 class="text-shadow-sm">លោក ហែម តៅ</h6>
+                            <h6 class="text-shadow-sm">លោកស្រី សាន សោភា</h6>
                         </div>
                     </div>
                     <p class="battambang-font text-xs sm:text-sm sm:px-5 text-amber-100 leading-relaxed pt-2" data-aos="fade-down">
@@ -46,38 +48,28 @@ export class About
                     </p>
                 </div>
 
-                <div class="flex flex-col sm:flex-row items-center justify-around gap-6 my-8 bg-black/20 p-6 rounded-xl border border-amber-500/30 overflow-hidden relative" data-aos="zoom-out" data-aos-duration="1500">
-                    <div class="geometric-background" id="geometric-background"></div>
+                <div class="flex flex-row sm:flex-row items-center justify-around gap-0 sm:gap-6 my-8 bg-black/20 p-2 sm:p-6 rounded-xl backdrop-blur-sm border border-teal-100/20 relative" data-aos="zoom-out" data-aos-duration="3000">
+                
                     <!-- Groom -->
                     <div class="text-center space-y-2">
-                        <div class="w-32 h-32 mx-auto rounded-full border-2 border-amber-400 overflow-hidden shadow-lg bg-amber-900/40 flex items-center justify-center animate-pulse-slow relative group">
-                            <img src="./photo/photo_1_2026-09-21_21-41-23.jpg" 
-                                alt="កូនប្រុស យឿន ឆៃយ៉ា"
-                                class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
-                        </div>
-                        <p class="text-xs text-amber-300 battambang-font uppercase">កូនប្រុស</p>
-                        <h2 class="moul-font text-base sm:text-lg text-amber-200">យឿន ឆៃយ៉ា</h2>
+                        <p class="text-xs text-amber-300 moul-font uppercase">កូនប្រុស</p>
+                        <h2 class="moul-font text-base sm:text-lg text-amber-200 text-shadow-sm">យឿន ឆៃយ៉ា</h2>
                     </div>
 
                     <!-- Heart Symbol -->
+                    <!-- <div class="text-amber-400 text-3xl font-bold animate-bounce"> --> 
                     <div class="text-amber-400 text-3xl font-bold animate-bounce">
-                        <img width="100px" src="./photo/balloon.png" alt="no image" data-aos="fade-down">
+                        <img class="love" src="./photo/balloon.png" alt="no image" data-aos="fade-down">
                     </div>
 
                     <!-- Bride -->
                     <div class="text-center space-y-2">
-                        <div class="w-32 h-32 mx-auto rounded-full border-2 border-amber-400 overflow-hidden shadow-lg bg-amber-900/40 flex items-center justify-center animate-pulse-slow relative group">
-                            <img src="./photo/photo_2_2026-09-21_21-41-23.jpg" 
-                                alt="កូនស្រី ហែម សុខហ័រ" 
-                                class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
-                        </div>
-                        <p class="text-xs text-amber-300 battambang-font uppercase">កូនស្រី</p>
-                        <h2 class="moul-font text-base sm:text-lg text-amber-200">ហែម សុខហ័រ</h2>
+                        <p class="text-xs text-amber-300 moul-font uppercase">កូនស្រី</p>
+                        <h2 class="moul-font text-base sm:text-lg text-amber-200 text-shadow-sm">ហែម សុខហ័រ</h2>
                     </div>
-
                 </div>
 
-                <div class="text-center bg-amber-950/20 p-5 rounded-xl border border-amber-400/20 space-y-3 mb-6 shadow-inner" data-aos="fade-up">
+                <div class="text-center bg-amber-950/20 p-5 rounded-xl border border-teal-100/20 space-y-3 mb-6 shadow-inner" data-aos="fade-up">
                     <p class="text-amber-300 text-base moul-font">សូមអញ្ជើញភ្ញៀវកិត្តិយស</p>
                     <p class="battambang-font text-xs sm:text-sm sm:px-5 text-amber-100 leading-relaxed">
                         មកទទួលទានភោជនាហារដែលប្រព្រឹតទៅនៅ ថ្ងៃ អាទិត្យ ទី១៧ ខែមករា ឆ្នាំ២០២៧ ត្រូវនឹងថ្ងៃ ១០ កើត ខែបុស្ស ឆ្នាំមមី អដ្ឋស័ក ព.ស ២៥៧០ វេលាម៉ោង ៥:០០ នាទីល្ងាច នៅគេហដ្ឋានខាងស្រី ស្ថិតនៅ​ ភូមិ តាសេក ឃុំ ព្រែកអំបិល ស្រុក ស្អាង ខេត្ត កណ្ដាល
@@ -86,7 +78,7 @@ export class About
                 </div>
 
                 <!-- Couple Photo Gallery Section -->
-                <div class="mb-6 bg-black/20 p-4 rounded-xl border border-amber-500/20 text-center space-y-3" data-aos="fade-up">
+                <div class="mb-6 bg-black/20 p-4 rounded-xl border border-teal-100/20 text-center space-y-3" data-aos="fade-up">
                     <p class="moul-font text-sm text-amber-300">រូបភាពអនុស្សាវរីយ៍</p>
                     <div class="grid grid-cols-3 gap-2">
                         <div class="rounded-lg overflow-hidden border border-amber-400/40 aspect-square group cursor-pointer" data-aos="fade-up">

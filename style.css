@@ -58,7 +58,7 @@ body {
 }
 
 .frame [class^="conner-"] {
-    width: 200px;
+    width: 230px;
     position: absolute;
     z-index: 0;
     animation: frame 0.8s ease-in-out;
@@ -76,17 +76,23 @@ body {
         padding: 50px 20px !important;
     }
     .frame [class^="conner-"] {
-        width: 160px;
+        width: 140px;
         position: absolute;
     }
 }
+.frame .conner-top{
+    width: 440px;
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+}
 .frame .conner-left{
-    top: -23px;
-    left: -31px;
+    top: -44px;
+    left: -44px;
 }
 .frame .conner-right{
-    top: -21px;
-    right: -33px;
+    top: -44px;
+    right: -44px;
     transform: rotate(90deg);
 }
 .frame .conner-bottom-right{
@@ -121,6 +127,16 @@ body {
 }
 
 
+
+@keyframes sweep {
+  0% {
+    transform: translate(-100%, -100%) rotate(45deg);
+  }
+  100% {
+    transform: translate(100%, 100%) rotate(45deg);
+  }
+}
+
 .battambang-font {
     font-family: 'Hanuman', cursive;
 }
@@ -145,6 +161,9 @@ body {
     /* box-shadow: 0 0 25px rgba(212, 175, 55, 0.5); */
 }
 
+.moul-font.text-xs {
+    font-size: calc(0.75rem + 0.08vw) !important;
+}
 .text-xs {
     line-height: 1.25rem;
     font-size: calc(0.875rem + 0.08vw) !important;
@@ -186,6 +205,15 @@ body {
 .animate-bounce {
     animation: bounces 1.5s infinite !important;
 }
+.animate-bounce img{
+    width: 100px;
+}
+@media screen and (max-width: 640px) {
+    .animate-bounce img{
+        transform: scale(1.4) !important;
+        width: 60px;
+    }
+}
 
 @keyframes bounces {
     0%, 100% {
@@ -208,7 +236,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 14px;
-    transition: transform 0.3s ease;
+    transition: all 0.4s ease;
     transform: translateY(0%);
     animation: navbar 1s linear;
     left: 0;
@@ -221,7 +249,7 @@ body {
     100%{transform: translateY(0%); opacity: 1;}
 }
 .navbar-btn.fixed {
-    padding: 0 20px;
+    padding: 0 12px;
     position: fixed;
     top: 10px;
 }
@@ -266,9 +294,11 @@ body {
 }
 
 .bg-pattern {
-
+    /* background-image: url(./photo/bg.jpg); */
     background-image: url(./photo/seamless-pattern-with-cute-flowers-on-a-mint-background-delicate-floral-print-vector.jpg);
     background-size: 200px 200px;
+    /* background-size: 100% 100vh; */
+    background-attachment: fixed;
     background-position: 0 0, 30px 30px;
 }
 

@@ -12,8 +12,10 @@ export class Home
         // Add Navbar
         app.appendChild(navbars.render());
         app.insertAdjacentHTML("beforeend", `
-            <div class="frame max-w-xl w-full bg-gradient-to-b from-teal-950 via-teal-600 to-teal-700 text-amber-100 p-4 sm:p-10 gold-border relative overflow shadow-2xl my-4">
+            <!-- bg-gradient-to-b from-teal-950 via-teal-600 to-teal-700 -->
+            <div class="frame max-w-xl w-full bg-gradient-to-b from-teal-950 via-teal-600 to-teal-700 text-amber-100 p-4 sm:p-10 gold-border relative shadow-2xl my-4">
                 <!-- Traditional Corner Ornaments -->
+                <img class="conner-top" src="./photo/conner-top.png" alt="no image">
                 <img class="conner-left" src="./photo/images-left.png" alt="no image">
                 <img class="conner-right" src="./photo/images-left.png" alt="no image">
                 <img class="conner-bottom-right" src="./photo/images-left.png" alt="no image">
@@ -26,42 +28,43 @@ export class Home
                 -->
                 <!-- Header / Invitation Title -->
                 <div class="text-center space-y-2 mb-6" data-aos="fade-down">
-                    <p class="text-amber-300 text-xs sm:text-sm tracking-widest uppercase battambang-font">ព្រះរាជាណាចក្រកម្ពុជា</p>
-                    <p class="text-amber-200 text-xs italic">ជាទីគោរពស្រលាញ់ដ៏ជ្រាលជ្រៅ</p>
-                    <h1 class="moul-font text-2xl sm:text-3xl gold-gradient mt-2 py-2" data-aos="fade-down" data-aos-duration="1500">សិរីមង្គលអាពាហ៍ពិពាហ៍</h1>
-                    <div class="w-32 h-0.5 bg-amber-400 mx-auto my-3"></div>
+                    <p class="moul-font text-amber-300 text-xs tracking-widest uppercase text-shadow-lg/20">ព្រះរាជាណាចក្រកម្ពុជា</p>
+                    <p class="moul-font text-amber-200 text-xs italic text-shadow-lg/20">ជាទីគោរពស្រលាញ់ដ៏ជ្រាលជ្រៅ</p>
+                    <h1 class="moul-font text-2xl sm:text-3xl text-yellow-500 gold-gradient mt-2 py-2 text-shadow-lg text-pretty" data-aos="fade-down" data-aos-duration="1500">សិរីមង្គលអាពាហ៍ពិពាហ៍</h1>
+                    <!-- <div class="w-32 h-0.5 bg-amber-400 mx-auto my-3"></div> -->
+                    <img width="120px " class="mx-auto" src="./photo/border-style.png" alt="no image">
                     
                 </div>
 
-                <div class="flex flex-col sm:flex-row items-center justify-around gap-6 my-8 bg-black/20 p-6 rounded-xl border border-amber-500/30 relative" data-aos="zoom-out" data-aos-duration="3000">
+                <div class="flex flex-row sm:flex-row items-center justify-around gap-0 sm:gap-6 my-8 bg-black/20 p-2 sm:p-6 rounded-xl backdrop-blur-sm border border-teal-100/20 relative" data-aos="zoom-out" data-aos-duration="3000">
                 
                     <!-- Groom -->
                     <div class="text-center space-y-2">
-                        <p class="text-xs text-amber-300 battambang-font uppercase">កូនប្រុស</p>
-                        <h2 class="moul-font text-base sm:text-lg text-amber-200">យឿន ឆៃយ៉ា</h2>
+                        <p class="text-xs text-amber-300 moul-font uppercase">កូនប្រុស</p>
+                        <h2 class="moul-font text-base sm:text-lg text-amber-200 text-shadow-sm">យឿន ឆៃយ៉ា</h2>
                     </div>
 
                     <!-- Heart Symbol -->
                     <!-- <div class="text-amber-400 text-3xl font-bold animate-bounce"> --> 
                     <div class="text-amber-400 text-3xl font-bold animate-bounce">
-                        <img width="100px" src="./photo/balloon.png" alt="no image" data-aos="fade-down">
+                        <img class="love" src="./photo/balloon.png" alt="no image" data-aos="fade-down">
                     </div>
 
                     <!-- Bride -->
                     <div class="text-center space-y-2">
-                        <p class="text-xs text-amber-300 battambang-font uppercase">កូនស្រី</p>
-                        <h2 class="moul-font text-base sm:text-lg text-amber-200">ហែម សុខហ័រ</h2>
+                        <p class="text-xs text-amber-300 moul-font uppercase">កូនស្រី</p>
+                        <h2 class="moul-font text-base sm:text-lg text-amber-200 text-shadow-sm">ហែម សុខហ័រ</h2>
                     </div>
                 </div>
                 
                 <div id="particles"></div>
                 <!-- Guest Name -->
-                <h2 class="moul-font text-center mb-4 text-md sm:text-lg text-amber-200" data-aos="fade-down" data-aos-duration="1500">សូមគោរពអញ្ចើញ</h2>
+                <h2 class="moul-font text-center mb-4 text-md sm:text-lg text-amber-200 text-shadow-md" data-aos="fade-down" data-aos-duration="1500">សូមគោរពអញ្ចើញ</h2>
                 <div class="text-center py-5 bg-linear-[90deg,#ffd0d700,#f6f6f63e,#ffd0d700] space-y-3 mb-6" data-aos="fade-up">
-                    <h2 class="moul-font text-md sm:text-lg text-olive-50" data-aos="zoom-out" data-aos-duration="2000">${name}</h2>
+                    <h2 class="moul-font text-md sm:text-lg text-olive-50 text-shadow-sm" data-aos="zoom-out" data-aos-duration="2000">${name}</h2>
                 </div>
 
-                <div class="text-center bg-amber-950/20 p-5 rounded-xl border border-amber-400/20 space-y-3 mb-6 shadow-inner" data-aos="fade-up">
+                <div class="text-center bg-amber-950/20 p-5 rounded-xl backdrop-blur-sm border border-teal-100/20 space-y-3 mb-6 shadow-inner" data-aos="fade-up">
                     <p class="text-amber-300 text-base moul-font">សូមអញ្ជើញភ្ញៀវកិត្តិយស</p>
                     <p class="battambang-font text-xs sm:text-sm sm:px-5 text-amber-100 leading-relaxed">
                         មកទទួលទានភោជនាហារដែលប្រព្រឹតទៅនៅ ថ្ងៃ អាទិត្យ ទី១៧ ខែមករា ឆ្នាំ២០២៧ ត្រូវនឹងថ្ងៃ ១០ កើត ខែបុស្ស ឆ្នាំមមី អដ្ឋស័ក ព.ស ២៥៧០ វេលាម៉ោង ៥:០០ នាទីល្ងាច នៅគេហដ្ឋានខាងស្រី ស្ថិតនៅ​ ភូមិ តាសេក ឃុំ ព្រែកអំបិល ស្រុក ស្អាង ខេត្ត កណ្ដាល
