@@ -242,12 +242,6 @@ body {
 }
 #loading.hide{
     display: block;
-    animation: loading 1s ease-in forwards;
-    
-}
-@keyframes loading {
-    0%{opacity: 1;}
-    100%{opacity: 0;}
 }
 .loader {
   width: 50px;
