@@ -160,7 +160,7 @@ export class About
 
             <!-- RSVP Modal Popup -->
             <div id="rsvpModal" class="backdrop-blur-sm fixed top-0 inset-0 flex items-center justify-center p-4 z-50 hidden">
-                <div class="Modal-body bg-teal-900/40 border-2 border-teal-400 p-6 rounded-2xl max-w-md w-full text-amber-100 shadow-2xl relative">
+                <div class="Modal-body bg-teal-900/40 border-2 border-teal-100/40 shadow p-6 rounded-2xl max-w-md w-full text-amber-100 shadow-2xl relative">
                     <button id="closeRSVP" class="absolute top-3 right-3 text-amber-300 hover:text-white text-xl font-bold">&times;</button>
                     <h3 class="moul-font my-text-lg text-amber-300 text-center mb-4">ទំនាក់ទំនង</h3>
                     <div class="contact">
@@ -177,7 +177,7 @@ export class About
             </div>
 
             <!-- RSVP Modal Popup -->
-            <div id="tasts" class="tasts text-teal-50 hidden backdrop-blur-sm text-sm bg-teal-500/60 p-3 rounded-lg border border-amber-500/40"></div>
+            <div id="tasts" class="tasts text-teal-50 hidden text-sm bg-teal-50/30 p-3 backdrop-blur-md rounded-lg border border-teal-50/40"></div>
         `);
         const modal = new Modal();
         document

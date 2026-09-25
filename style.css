@@ -187,7 +187,7 @@ body {
 }
 @media screen and (max-width: 640px) {
     .tasts{
-        width: 80% !important;
+        width: 90% !important;
         bottom: 5% !important;
         left: 50% !important;
         padding: 12px 20px;
@@ -225,6 +225,56 @@ body {
         transform: translateY(0) scaleY(1);
         animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
     }
+}
+
+/* HTML: <div class="loader"></div> */
+#loading{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #a5edde64;
+    backdrop-filter: blur(6px);
+    border-radius: 10px;
+    opacity: 1;
+    display: none;
+}
+#loading.hide{
+    display: block;
+    animation: loading 1s ease-in forwards;
+    
+}
+@keyframes loading {
+    0%{opacity: 1;}
+    100%{opacity: 0;}
+}
+.loader {
+  width: 50px;
+  aspect-ratio: 1;
+  display: grid;
+  color: #c5bc0a7d;
+  background: radial-gradient(farthest-side, currentColor calc(100% - 6px),#0000 calc(100% - 5px) 0);
+  -webkit-mask: radial-gradient(farthest-side,#0000 calc(100% - 13px),#000 calc(100% - 12px));
+  border-radius: 50%;
+  animation: l19 2s infinite linear;
+}
+.loader::before,
+.loader::after {    
+  content: "";
+  grid-area: 1/1;
+  background:
+    linear-gradient(currentColor 0 0) center,
+    linear-gradient(currentColor 0 0) center;
+  background-size: 100% 10px,10px 100%;
+  background-repeat: no-repeat;
+}
+.loader::after {
+   transform: rotate(45deg);
+}
+
+@keyframes l19 { 
+  100%{transform: rotate(1turn)}
 }
 
 .navbar-btn {
