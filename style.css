@@ -8,6 +8,9 @@ body {
     background-color: #580c14;
 }
 @media screen and (max-width: 640px) {
+    html {
+        padding-top: 50px;
+    }
     body {
         padding: 0px 4px;
         overflow-x: hidden !important;
@@ -187,7 +190,7 @@ body {
     animation: navbar 1s linear;
     left: 0;
     z-index: 800;
-    padding: 0 20px;
+    /* padding: 0 20px; */
     margin-top: 0px !important;
 }
 @keyframes navbar {
@@ -195,6 +198,7 @@ body {
     100%{transform: translateY(0%); opacity: 1;}
 }
 .navbar-btn.fixed {
+    padding: 0 20px;
     position: fixed;
     top: 10px;
 }
@@ -209,7 +213,7 @@ body {
 @media screen and (max-width: 640px) {
     .navbar-btn {
         top: 10px;
-        margin-top: 12px !important;
+        /* margin-top: 12px !important; */
     }
     .navbar-btn .nav-btn {
         padding: 8px 8px;
