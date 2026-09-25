@@ -5,7 +5,7 @@ html {
 }
 body {
     font-family: 'Hanuman', sans-serif;
-    background-color: #580c14;
+    /* background-color: #580c14; */
 }
 @media screen and (max-width: 640px) {
     html {
@@ -34,6 +34,29 @@ body {
     /* background-position: top left, top right; */
     /* background-repeat: no-repeat, no-repeat; */
 }
+.frame::before{
+    content: " ";
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background-image: linear-gradient( #ffffff00 , #ffffff13,  #ffffff00);
+    transform: skewY(-0deg) rotate(0deg) !important;
+    animation:  frameAfter 20s linear infinite;
+    z-index: 0;
+    backdrop-filter: blur(2px);
+}
+
+
+
+
+@keyframes frameAfter {
+    0%{ top: 0%;}
+    100%{top: 100%;}
+    
+}
+
 .frame [class^="conner-"] {
     width: 200px;
     position: absolute;
@@ -58,41 +81,41 @@ body {
     }
 }
 .frame .conner-left{
-    top: -13px;
-    left: -11px;
+    top: -23px;
+    left: -31px;
 }
 .frame .conner-right{
-    top: -11px;
-    right: -13px;
+    top: -21px;
+    right: -33px;
     transform: rotate(90deg);
 }
 .frame .conner-bottom-right{
-    bottom: -13px;
-    right: -11px;
+    bottom: -23px;
+    right: -31px;
     transform: rotate(-180deg);
 }
 .frame .conner-bottom-left{
-    bottom: -11px;
-    left: -13px;
+    bottom: -21px;
+    left: -33px;
     transform: rotate(-90deg);
 }
 
 @media screen and (max-width: 640px) {
     .frame .conner-left{
-        top: -2px;
-        left: -1px;
+        top: -20px;
+        left: -20px;
     }
     .frame .conner-right{
-        top: -2px;
-        right: -1px;
+        top: -20px;
+        right: -20px;
     }
     .frame .conner-bottom-right{
-        bottom: -2px;
-        right: -1px;
+        bottom: -20px;
+        right: -20px;
     }
     .frame .conner-bottom-left{
-        bottom: -2px;
-        left: -1px;
+        bottom: -20px;
+        left: -20px;
     }
 
 }
@@ -242,13 +265,11 @@ body {
     100%{opacity: 1; transform: scale(1) }
 }
 
-
-
 .bg-pattern {
-    background-color: #610d18;
-    background-image: radial-gradient(#871324 15%, transparent 16%), radial-gradient(#871324 15%, transparent 16%);
-    background-size: 50px 50px;
-    background-position: 0 0, 25px 25px;
+
+    background-image: url(./photo/seamless-pattern-with-cute-flowers-on-a-mint-background-delicate-floral-print-vector.jpg);
+    background-size: 200px 200px;
+    background-position: 0 0, 30px 30px;
 }
 
 @keyframes pulse-slow {

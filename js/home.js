@@ -12,7 +12,7 @@ export class Home
         // Add Navbar
         app.appendChild(navbars.render());
         app.insertAdjacentHTML("beforeend", `
-            <div class="frame max-w-xl w-full bg-gradient-to-b from-red-950 via-red-900 to-red-950 text-amber-100 p-4 sm:p-10 gold-border relative overflow shadow-2xl my-4">
+            <div class="frame max-w-xl w-full bg-gradient-to-b from-teal-950 via-teal-600 to-teal-700 text-amber-100 p-4 sm:p-10 gold-border relative overflow shadow-2xl my-4">
                 <!-- Traditional Corner Ornaments -->
                 <img class="conner-left" src="./photo/images-left.png" alt="no image">
                 <img class="conner-right" src="./photo/images-left.png" alt="no image">
@@ -57,7 +57,7 @@ export class Home
                 <div id="particles"></div>
                 <!-- Guest Name -->
                 <h2 class="moul-font text-center mb-4 text-md sm:text-lg text-amber-200" data-aos="fade-down" data-aos-duration="1500">សូមគោរពអញ្ចើញ</h2>
-                <div class="text-center bg-amber-800 p-3 rounded-xl border border-amber-400/20 space-y-3 mb-6 shadow-inner" data-aos="fade-up">
+                <div class="text-center py-5 bg-linear-[90deg,#ffd0d700,#f6f6f63e,#ffd0d700] space-y-3 mb-6" data-aos="fade-up">
                     <h2 class="moul-font text-md sm:text-lg text-olive-50" data-aos="zoom-out" data-aos-duration="2000">${name}</h2>
                 </div>
 
@@ -105,16 +105,16 @@ export class Home
             </div>
 
             <!-- RSVP Modal Popup -->
-            <div id="rsvpModal" class="fixed top-0 inset-0 flex items-center justify-center p-4 z-50 hidden">
-                <div class="Modal-body bg-red-950 border-2 border-amber-400 p-6 rounded-2xl max-w-md w-full text-amber-100 shadow-2xl relative">
+            <div id="rsvpModal" class="backdrop-blur-sm fixed top-0 inset-0 flex items-center justify-center p-4 z-50 hidden">
+                <div class="Modal-body bg-teal-900/40 border-2 border-teal-400 p-6 rounded-2xl max-w-md w-full text-amber-100 shadow-2xl relative">
                     <button id="closeRSVP" class="absolute top-3 right-3 text-amber-300 hover:text-white text-xl font-bold">&times;</button>
                     <h3 class="moul-font my-text-lg text-amber-300 text-center mb-4">ទំនាក់ទំនង</h3>
                     <div class="contact">
-                        <a href="https://t.me/yoeunchhaiya" target="_blank" class="link bg-linear-to-r from-red-900 via-orange-600 to-orange-400 hover:bg-linear-to-tr hover:scale-102 font-bold px-4 py-2 rounded-full shadow transition text-xs sm:text-sm w-full">
+                        <a href="https://t.me/yoeunchhaiya" target="_blank" class="link text-teal-50 bg-linear-to-r from-teal-400 via-teal-600 to-teal-400 hover:bg-linear-to-tr hover:scale-102 font-bold px-4 py-2 rounded-full shadow transition text-xs sm:text-sm w-full">
                             <img src="./photo/telegram.png" alt="No photo">
                             ទំនាក់ទំនង Telegram កូមកំលោះ
                         </a>
-                        <a href="https://t.me/yoeunchhaiya" target="_blank" class="link bg-linear-to-r from-red-800 via-orange-500 to-orange-300 hover:bg-linear-to-tr hover:scale-102 font-bold px-4 py-2 rounded-full shadow transition text-xs sm:text-sm w-full">
+                        <a href="https://t.me/yoeunchhaiya" target="_blank" class="link text-teal-50 bg-linear-to-r from-teal-400 via-teal-600 to-teal-400 hover:bg-linear-to-tr hover:scale-102 font-bold px-4 py-2 rounded-full shadow transition text-xs sm:text-sm w-full">
                             <img src="./photo/telegram.png" alt="No photo">
                             ទំនាក់ទំនង Telegram កូនក្រមុំ
                         </a>
@@ -123,7 +123,7 @@ export class Home
             </div>
 
             <!-- RSVP Modal Popup -->
-            <div id="tasts" class="tasts hidden text-sm bg-teal-500/60 p-3 rounded-lg border border-amber-500/40"></div>
+            <div id="tasts" class="tasts text-teal-50 hidden backdrop-blur-sm text-sm bg-teal-500/60 p-3 rounded-lg border border-amber-500/40"></div>
         `);
 
         const modal = new Modal();
