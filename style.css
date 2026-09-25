@@ -1,16 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Hanuman:wght@100..900&family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&family=Moul&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* html {
+html {
     padding-top: 30px;
-} */
+}
 body {
     font-family: 'Hanuman', sans-serif;
-    /* background-color: #580c14; */
+    background-color: #6DABA8;
 }
 @media screen and (max-width: 640px) {
-    /* html {
+    html {
         padding-top: 50px;
-    } */
+    }
     body {
         padding: 0px 4px;
         overflow-x: hidden !important;
