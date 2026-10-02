@@ -30,20 +30,20 @@ export class About
                 <div class="text-center space-y-2 mb-6" data-aos="fade-down">
                     <p class="moul-font text-amber-300 text-xs tracking-widest uppercase text-shadow-lg/20">ព្រះរាជាណាចក្រកម្ពុជា</p>
                     <p class="moul-font text-amber-200 text-xs italic text-shadow-lg/20">ជាទីគោរពស្រលាញ់ដ៏ជ្រាលជ្រៅ</p>
-                    <h1 class="moul-font text-2xl sm:text-3xl text-yellow-500 gold-gradient mt-2 py-2 text-shadow-lg text-pretty" data-aos="fade-down" data-aos-duration="1200">សិរីមង្គលអាពាហ៍ពិពាហ៍</h1>
+                    <h1 class="moul-font text-3xl sm:text-3xl text-yellow-500 gold-gradient mt-2 py-2 text-shadow-lg text-pretty" data-aos="fade-down" data-aos-duration="1200">សិរីមង្គលអាពាហ៍ពិពាហ៍</h1>
                     <!-- <div class="w-32 h-0.5 bg-amber-400 mx-auto my-3"></div> -->
                     <img width="120px " class="mx-auto" src="./photo/border-style.png" alt="no image">
                     <div class="flex items-center justify-between header sm:px-5">
-                        <div class="text-start moul-font text-amber-200/80" data-aos="fade-right" data-aos-duration="1500">
+                        <div class="text-start moul-font text-amber-200/80" data-aos="zoom-out" data-aos-duration="1500">
                             <h6 class="text-shadow-sm">លោក សុង យឿន</h6>
                             <h6 class="text-shadow-sm">លោកស្រី ថោង គន្ធា</h6>
                         </div>
-                        <div class="text-start moul-font text-amber-200/80" data-aos="fade-left" data-aos-duration="1500">
+                        <div class="text-start moul-font text-amber-200/80" data-aos="zoom-out" data-aos-duration="1500">
                             <h6 class="text-shadow-sm">លោក ហែម តៅ</h6>
                             <h6 class="text-shadow-sm">លោកស្រី សាន សោភា</h6>
                         </div>
                     </div>
-                    <p class="battambang-font text-xs sm:text-sm sm:px-5 text-amber-100 leading-relaxed pt-2" data-aos="fade-down">
+                    <p class="battambang-font text-xs sm:text-sm sm:px-5 text-amber-100 leading-relaxed pt-2" data-aos="zoom-out">
                         យើងខ្ញុំមានកិត្តិយសសូមគោរពអញ្ជើញ ឯកឧត្តម លោកជំទាវ លោក លោកស្រី អ្នកនាងកញ្ញា និង ប្រិយមិត្តទាំងអស់អញ្ចើញចូលរួមជាអធិបតី និងជាភ្ញៀវកិត្តិយលដើម្បីប្រសិទ្ធិពរជ័យ សិរីសួស្ដី ជ័យមង្គ័លក្នុង ពិធីរៀបអាពារណ៍ពិពាហ៍ កូនប្រុស-កូនស្រី របស់យើងខ្ញុំ ។
                     </p>
                 </div>
