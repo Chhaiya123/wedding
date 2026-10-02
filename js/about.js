@@ -1,11 +1,16 @@
 import { Modal } from './modal/Modal.js';
 import { Navbar } from './modal/Navbar.js';
 
-export class About
-{
+import Swiper from "swiper";
+import "swiper/css";
+
+
+
+
+export class About {
     index() {
         const app = document.querySelector("#app");
-     
+
         const navbars = new Navbar();
 
         // Add Navbar
@@ -30,7 +35,7 @@ export class About
                 <div class="text-center space-y-2 mb-6" data-aos="fade-down">
                     <p class="moul-font text-amber-300 text-xs tracking-widest uppercase text-shadow-lg/20">ព្រះរាជាណាចក្រកម្ពុជា</p>
                     <p class="moul-font text-amber-200 text-xs italic text-shadow-lg/20">ជាទីគោរពស្រលាញ់ដ៏ជ្រាលជ្រៅ</p>
-                    <h1 class="moul-font text-3xl sm:text-3xl text-yellow-500 gold-gradient mt-2 py-2 text-shadow-lg text-pretty" data-aos="fade-down" data-aos-duration="1200">សិរីមង្គលអាពាហ៍ពិពាហ៍</h1>
+                    <h1 class="moul-font text-[26px] sm:text-3xl text-yellow-500 gold-gradient mt-2 py-2 text-shadow-lg text-pretty" data-aos="fade-down" data-aos-duration="1200">សិរីមង្គលអាពាហ៍ពិពាហ៍</h1>
                     <!-- <div class="w-32 h-0.5 bg-amber-400 mx-auto my-3"></div> -->
                     <img width="120px " class="mx-auto" src="./photo/border-style.png" alt="no image">
                     <div class="flex items-center justify-between header sm:px-5">
@@ -78,6 +83,25 @@ export class About
                 </div>
 
                 <!-- Couple Photo Gallery Section -->
+                 <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">Slide 1</div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
+        <div class="swiper-slide">Slide 4</div>
+        <div class="swiper-slide">Slide 5</div>
+        <div class="swiper-slide">Slide 6</div>
+        <div class="swiper-slide">Slide 7</div>
+        <div class="swiper-slide">Slide 8</div>
+        <div class="swiper-slide">Slide 9</div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+                
+
                 <div class="mb-6 bg-black/20 p-4 rounded-xl border border-teal-100/20 text-center space-y-3" data-aos="fade-up">
                     <p class="moul-font text-sm text-amber-300">រូបភាពអនុស្សាវរីយ៍</p>
                     <div class="grid grid-cols-3 gap-2">
@@ -197,7 +221,7 @@ export class About
                 modal.shareCard();
             });
 
-        
+
         const homeUrl = localStorage.getItem("home");
         const home = document.getElementById("home");
         const navbar = document.getElementById("navbar");
@@ -236,6 +260,16 @@ export class About
                 lastScrollY = currentScrollY;
             });
         }
+        const swiper = new Swiper('.mySwiper', {
+        pagination: {
+          el: '.swiper-pagination',
+          type: 'fraction',
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
     }
 
 }
@@ -265,9 +299,9 @@ class Wedding {
             // Random shape type
             const shapeClass =
                 shapeTypes[
-                    Math.floor(
-                        Math.random() * shapeTypes.length
-                    )
+                Math.floor(
+                    Math.random() * shapeTypes.length
+                )
                 ];
 
             // Add class
@@ -476,19 +510,19 @@ class Wedding {
         // =========================
 
         const day = document.getElementById("days");
-        if(day) {
+        if (day) {
             document.getElementById("days")
                 .innerText =
                 String(days).padStart(2, "0");
-    
+
             document.getElementById("hours")
                 .innerText =
                 String(hours).padStart(2, "0");
-    
+
             document.getElementById("minutes")
                 .innerText =
                 String(minutes).padStart(2, "0");
-    
+
             document.getElementById("seconds")
                 .innerText =
                 String(seconds).padStart(2, "0");

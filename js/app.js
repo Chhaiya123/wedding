@@ -2,6 +2,13 @@
 import { Router } from './Router.js';
 import { webRoutes } from './routes/web.js';
 
+import "./about.js";
+
+// const swiper = new Swiper(".mySwiper", {
+//     slidesPerView: 1,
+//     spaceBetween: 20,
+// });
+
 
 const router = new Router();
 

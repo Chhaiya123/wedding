@@ -1,7 +1,14 @@
 {
+  "scripts": {
+        "dev": "vite"
+  },
   "dependencies": {
     "@tailwindcss/cli": "^4.3.3",
     "aos": "^2.3.4",
+    "swiper": "^14.3.0",
     "tailwindcss": "^4.3.3"
+  },
+  "devDependencies": {
+    "vite": "^8.3.2"
   }
 }
