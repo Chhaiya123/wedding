@@ -1,8 +1,8 @@
 import { Modal } from './modal/Modal.js';
 import { Navbar } from './modal/Navbar.js';
 
-import Swiper from "swiper";
-import "swiper/css";
+// import Swiper from "swiper";
+// import "swiper/css";
 
 
 
@@ -83,7 +83,7 @@ export class About {
                 </div>
 
                 <!-- Couple Photo Gallery Section -->
-                 <!-- Swiper -->
+                 <!-- Swiper 
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide">Slide 1</div>
@@ -99,7 +99,7 @@ export class About {
       <div class="swiper-button-next"></div>
       <div class="swiper-button-prev"></div>
       <div class="swiper-pagination"></div>
-    </div>
+    </div> -->
                 
 
                 <div class="mb-6 bg-black/20 p-4 rounded-xl border border-teal-100/20 text-center space-y-3" data-aos="fade-up">
